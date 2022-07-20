@@ -1,0 +1,20 @@
+{
+    "description": "Arcad Demo",
+    "version": "0.0.1",
+    "includePath": [
+        "GITCO_SRC/QPROTOSRC"
+    ],
+    "repository": "git@github.com:aecspades/GITCO-merlin.git.git",
+    "objlib": "&verlibgitco",
+    "curlib": "*CRTDFT",
+    "extensions": {
+        "arcad": {
+            "code": "GITCO",
+            "libraryPrefix": "GCO",
+            "iasp": "*SYSBAS",
+            "validated": true
+        }
+    },
+    "buildCommand": "elias compile {branch}",
+    "compileCommand": "elias compile {branch} -f {filename}"
+}
